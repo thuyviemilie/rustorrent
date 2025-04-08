@@ -1,0 +1,25 @@
+[package]
+name = "rustorrent"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.79"                                                   # error handling
+bendy = { version = "^0.3", features = ["std", "serde"] }           # decoding Bencode torrent file
+bytes = "1.5.0"                                                     # helps wrap responses from reqwest
+clap = { version = "4.4.6" , features = ["cargo"] }                 # creating a cli (command line interface)
+curl = "0.4.44"                                                     # http requests
+futures-core = "0.3"                                                #
+futures-sink = "0.3"                                                #
+futures-util = { version = "0.3", features = ["sink"] }             # for AsyncRead, AsyncWrite
+hex = "0.4.3"                                                       # encoding and decoding hex strings
+kanal = "0.1.0-pre8"
+reqwest = { version = "0.11", features = ["blocking", "json"] }     # http requests
+serde = { version = "1.0", features = ["derive"] }                  # for json mangling
+serde_urlencoded = "0.7.1"                                          # for url encoding
+serde_bencode = "0.2.4"                                             # for bencode coding/decoding
+sha1 = "0.10.6"                                                     # SHA1 hashing
+tokio = { version = "1.23.0", features = ["full"] }                 # async http requests
+tokio-util = { version = "0.7.9", features = ["full"] }             # async http requests

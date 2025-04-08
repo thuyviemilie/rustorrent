@@ -1,0 +1,5 @@
+- Leeching: downloading the whole file/directory specified in torrent file
+- Seeding: uploading a torrent to one or seveal peers
+- Multiple torrents: proceed with multiple torrents at the same time
+- Leech interruption: continue the downloading process from where it was stopped
+- DHT (Bonus): leeding and seeding using DHT protocol
